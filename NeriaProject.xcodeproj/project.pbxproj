@@ -13,6 +13,9 @@
 		D6D31D0425BD7615000D403A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D31D0225BD7615000D403A /* Main.storyboard */; };
 		D6D31D0625BD7616000D403A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D31D0525BD7616000D403A /* Assets.xcassets */; };
 		D6D31D0925BD7616000D403A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D31D0725BD7616000D403A /* LaunchScreen.storyboard */; };
+		D6D31D1525BD767A000D403A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D31D1425BD767A000D403A /* DataManager.swift */; };
+		D6D31D1825BD7690000D403A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D31D1725BD7690000D403A /* WebService.swift */; };
+		D6D31D1B25BD779F000D403A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D31D1A25BD779F000D403A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D6D31D0525BD7616000D403A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D31D0825BD7616000D403A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6D31D0A25BD7616000D403A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D31D1425BD767A000D403A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D6D31D1725BD7690000D403A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D6D31D1A25BD779F000D403A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				D6D31CFC25BD7615000D403A /* AppDelegate.swift */,
 				D6D31CFE25BD7615000D403A /* SceneDelegate.swift */,
-				D6D31D0025BD7615000D403A /* ViewController.swift */,
-				D6D31D0225BD7615000D403A /* Main.storyboard */,
+				D6D31D1A25BD779F000D403A /* Constants.swift */,
+				D6D31D1325BD762D000D403A /* Model */,
+				D6D31D1225BD7629000D403A /* VIew */,
+				D6D31D1125BD7623000D403A /* Controller */,
 				D6D31D0525BD7616000D403A /* Assets.xcassets */,
 				D6D31D0725BD7616000D403A /* LaunchScreen.storyboard */,
 				D6D31D0A25BD7616000D403A /* Info.plist */,
 			);
 			path = NeriaProject;
+			sourceTree = "<group>";
+		};
+		D6D31D1125BD7623000D403A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6D31D0025BD7615000D403A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6D31D1225BD7629000D403A /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				D6D31D0225BD7615000D403A /* Main.storyboard */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		D6D31D1325BD762D000D403A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6D31D1425BD767A000D403A /* DataManager.swift */,
+				D6D31D1725BD7690000D403A /* WebService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D31D0125BD7615000D403A /* ViewController.swift in Sources */,
+				D6D31D1525BD767A000D403A /* DataManager.swift in Sources */,
 				D6D31CFD25BD7615000D403A /* AppDelegate.swift in Sources */,
+				D6D31D1825BD7690000D403A /* WebService.swift in Sources */,
 				D6D31CFF25BD7615000D403A /* SceneDelegate.swift in Sources */,
+				D6D31D1B25BD779F000D403A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
